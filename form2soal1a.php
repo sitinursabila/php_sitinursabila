@@ -1,4 +1,7 @@
 <?php 
+if (!isset($_SESSION['simpan'])) {
+    header("Location: soal1a.php");
+}
 
 $start = $_POST['start'];
 $stop = $_POST['stop'];

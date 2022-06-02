@@ -1,4 +1,7 @@
 <?php 
+if (!isset($_SESSION['simpan']) && !isset($_SESSION['simpan2'])) {
+    header("Location: soal1a.php");
+}
 
 $cek = $_POST['input'];
 $a=0;
